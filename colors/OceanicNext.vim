@@ -1,7 +1,7 @@
 " ===============================================================
 " OceanicNext
-" 
-" URL: 
+"
+" URL:
 " Author: Mike Hartington
 " License: Apache
 " Last Change: 2016/11/28 09:14
@@ -13,6 +13,9 @@ if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name="OceanicNext"
+
+hi Normal guifg=#c0c5ce ctermfg=251 guibg=#1b2b34 ctermbg=235
+set background=dark
 
 hi Bold gui=bold cterm=bold
 hi Debug guifg=#ec5f67 ctermfg=203
@@ -40,7 +43,6 @@ hi Title guifg=#6699cc ctermfg=68 gui=NONE cterm=NONE
 hi Conceal guifg=#6699cc ctermfg=68 guibg=#1b2b34 ctermbg=235
 hi Cursor guifg=#1b2b34 ctermfg=235 guibg=#c0c5ce ctermbg=251
 hi NonText guifg=#65737e ctermfg=243
-hi Normal guifg=#c0c5ce ctermfg=251 guibg=#1b2b34 ctermbg=235
 hi LineNr guifg=#65737e ctermfg=243 guibg=#343d46 ctermbg=237
 hi CursorLineNR guifg=#ffffff ctermfg=15 guibg=#ffffff ctermbg=15
 hi SignColumn guifg=#65737e ctermfg=243 guibg=#343d46 ctermbg=237
