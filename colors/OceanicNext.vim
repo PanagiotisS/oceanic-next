@@ -4,7 +4,7 @@
 " URL:
 " Author: Mike Hartington
 " License: Apache
-" Last Change: 2016/11/28 09:14
+" Last Change: 2016/12/11 18:20
 " ===============================================================
 
 set background=dark
@@ -25,7 +25,7 @@ hi Exception guifg=#ec5f67 ctermfg=203
 hi FoldColumn guibg=#343d46 ctermbg=237
 hi Folded guifg=#65737e ctermfg=243 guibg=#343d46 ctermbg=237
 hi IncSearch guifg=#343d46 ctermfg=237 guibg=#f99157 ctermbg=209
-hi Italic gui=italic cterm=italic
+hi Italic gui=underline cterm=underline
 hi Macro guifg=#ec5f67 ctermfg=203
 hi MatchParen guifg=#c0c5ce ctermfg=251 guibg=#65737e ctermbg=243
 hi ModeMsg guifg=#99c794 ctermfg=114
@@ -62,7 +62,7 @@ hi TabLineFill guifg=#65737e ctermfg=243 guibg=#343d46 ctermbg=237 gui=NONE cter
 hi TabLineSel guifg=#99c794 ctermfg=114 guibg=#343d46 ctermbg=237 gui=NONE cterm=NONE
 hi Boolean guifg=#f99157 ctermfg=209
 hi Character guifg=#ec5f67 ctermfg=203
-hi Comment guifg=#65737e ctermfg=243 gui=italic cterm=italic
+hi Comment guifg=#65737e ctermfg=243 gui=NONE cterm=NONE
 hi Conditional guifg=#c594c5 ctermfg=176
 hi Constant guifg=#f99157 ctermfg=209
 hi Define guifg=#c594c5 ctermfg=176 gui=NONE cterm=NONE
@@ -116,8 +116,6 @@ hi gitCommitOverflow guifg=#ec5f67 ctermfg=203
 hi gitCommitSummary guifg=#99c794 ctermfg=114
 hi htmlBold guifg=#fac863 ctermfg=221
 hi htmlItalic guifg=#c594c5 ctermfg=176
-hi xmlTag guifg=#62b3b2 ctermfg=73 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi xmlEndTag guifg=#c0c5ce ctermfg=251 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi htmlTag guifg=#62b3b2 ctermfg=73
 hi htmlEndTag guifg=#62b3b2 ctermfg=73
 hi htmlArg guifg=#fac863 ctermfg=221 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -133,13 +131,13 @@ hi markdownBold guifg=#fac863 ctermfg=221 gui=bold cterm=bold
 hi markdownCodeDelimiter guifg=#ab7967 ctermfg=137 gui=italic cterm=italic
 hi markdownError guifg=#c0c5ce ctermfg=251 guibg=#1b2b34 ctermbg=235
 hi NeomakeErrorSign guifg=#ec5f67 ctermfg=203 guibg=#343d46 ctermbg=237
-hi NeomakeWarningSign guifg=#fac863 ctermfg=221 guibg=#343d46 ctermbg=237 gui=bold cterm=bold
+hi NeomakeWarningSign guifg=#fac863 ctermfg=221 guibg=#343d46 ctermbg=237
 hi NeomakeInfoSign guifg=#ffffff ctermfg=15 guibg=#343d46 ctermbg=237
 hi NeomakeError guifg=#ec5f67 ctermfg=203 gui=undercurl cterm=undercurl
 hi NeomakeWarning guifg=#ec5f67 ctermfg=203 gui=undercurl cterm=undercurl
 hi NERDTreeExecFile guifg=#c0c5ce ctermfg=251
 hi NERDTreeDirSlash guifg=#6699cc ctermfg=68
-hi NERDTreeOpenable guifg=#c0c5ce ctermfg=251 gui=bold cterm=bold
+hi NERDTreeOpenable guifg=#c0c5ce ctermfg=251
 hi phpComparison guifg=#c0c5ce ctermfg=251
 hi phpParent guifg=#c0c5ce ctermfg=251
 hi phpMemberSelector guifg=#c0c5ce ctermfg=251
@@ -161,7 +159,9 @@ hi GitGutterAdd guifg=#99c794 ctermfg=114 guibg=#343d46 ctermbg=237
 hi GitGutterChange guifg=#6699cc ctermfg=68 guibg=#343d46 ctermbg=237
 hi GitGutterDelete guifg=#ec5f67 ctermfg=203 guibg=#343d46 ctermbg=237
 hi GitGutterChangeDelete guifg=#c594c5 ctermfg=176 guibg=#343d46 ctermbg=237
+hi xmlTag guifg=#62b3b2 ctermfg=73 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi xmlTagName guifg=#c0c5ce ctermfg=251 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi xmlEndTag guifg=#62b3b2 ctermfg=73
 
 let g:terminal_color_0 = "#1b2b34"
 let g:terminal_color_1 = "#ec5f67"
