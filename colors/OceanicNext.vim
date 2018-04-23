@@ -67,6 +67,8 @@ function! <sid>hi(group, fg, bg, attr, attrsp)
 endfunction
 " }}}
 " {{{ call <sid>:hi(group, fg, bg, gui, guisp)
+call <sid>hi('Normal',                     s:base05, s:base00, '',          '')
+set background=dark " https://github.com/KevinGoodsell/vim-color-check/blob/master/color-scheme-recommendations.txt
 call <sid>hi('Bold',                       '',       '',       'bold',      '')
 call <sid>hi('Debug',                      s:base08, '',       '',          '')
 call <sid>hi('Directory',                  s:base0D, '',       '',          '')
@@ -94,7 +96,6 @@ call <sid>hi('Title',                      s:base0D, '',       '',          '')
 call <sid>hi('Conceal',                    s:base0D, s:base00, '',          '')
 call <sid>hi('Cursor',                     s:base00, s:base05, '',          '')
 call <sid>hi('NonText',                    s:base03, '',       '',          '')
-call <sid>hi('Normal',                     s:base05, s:base00, '',          '')
 call <sid>hi('EndOfBuffer',                s:base05, s:base00, '',          '')
 call <sid>hi('LineNr',                     s:base03, s:base00, '',          '')
 call <sid>hi('SignColumn',                 s:base00, s:base00, '',          '')
